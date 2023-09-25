@@ -1,0 +1,49 @@
+
+
+Relatório sobre o Projeto de Cancela Automática com Reconhecimento de Placas de Carros
+
+
+Eu sou o Vinicius Lima, e este é meu relatório sobre o nosso projeto de Cancela Automática com Reconhecimento de Placas de Carros. Vou compartilhar minhas experiências e o que rolou até agora.
+
+Desenvolvendo o Site:
+
+Então, eu fiquei responsavel pelo site. Foi tranquilo até fazer o site, nao tive muitas dificudades, mas acompanhei alguns tutorias no youtube.
+
+Pegamos um dominio e registramos(Unipark.dev.br), então eu decidi que seria melhor eu usar o wordpress, pois tem algumas facilidades.
+
+Por que o WordPress?
+Então pesquisando eu vi que além de pratico ele tem varios plugins que ajuda a gente no objetivo do site, facilitando muito nossas vidas.
+
+Objetivo do Site:
+
+A ideia do site é bem simples mesmo,  é que o site seja tipo um grande "histórico" para quem tá no controle disso tudo, tipo os porteiros. Queremos que eles tenham todas as infos na mão.
+
+Como foi bem tranquilo, e programei bem pouco decidi ajudar meus amigos que estavam cuidando do código, e do banco de dados que vai para o site.
+
+Sobre o Código:
+
+Criamos a classe "database"
+
+Esta parte lida com a conexão com um banco de dados onde as informações das placas de carros são guardadas.
+
+E a Classe "imagem"
+
+Parte principal do codigo, responsavel por lidar com as imagens da webcam e o reconhecimento das placas.
+
+
+Funcionalidade:
+
+Captura de Imagem: A função "_ImageCapture" pega imagens da webcam e as mostra na tela. Durante a captura, o código verifica se há placas de carros na imagem.
+
+Detecção de Placas: O método "_contorno_imagem" processa as imagens para encontrar possíveis placas de carros. Ele olha para os contornos dos objetos na imagem e identifica aqueles que se assemelham a retângulos, que podem ser placas de carros.
+
+Pré-processamento da Imagem: O método "_preProcessamentoRoi" prepara a área onde a placa foi detectada para o reconhecimento. Ele ajusta o tamanho, deixa a imagem em preto e branco e aplica alguns ajustes para tornar o reconhecimento mais preciso.
+
+Reconhecimento de Placas: O método "_ocrImagePlate" usa uma biblioteca chamada "pytesseract" para identificar os caracteres na placa. Ele então verifica se a placa reconhecida está no banco de dados.
+
+Conexão com o Banco de Ddos: O código ja está montado para conectar ao banco de dados MySQL, mas ainda nao terminamos 100% isso, falta mais segurança, backups e manutenções, muito mais dados. 
+
+
+
+
+
