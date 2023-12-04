@@ -1,3 +1,8 @@
+Atualizaçao P2:
+Bom, foquei mais no site nesses ultimos dias entao falarei sobre o site.
+Primeiro, através do cPanel, entrei no banco de dados e então criei as duas tabelas, tabela logs e tabela pessoas. Segundo, através do cPanel, fui para as configurações do banco de dados e liberei o acesso remoto para aquele banco em específico, depois disso, foi necessário coletar as credenciais do banco, nome senha do usuário, IP, nome da base de dados, após isso, foi feito um código PHP que especificamente se conecta com esse banco, e faz um select nessas tabelas, no caso um código para a tabela logs e outro pra tabela pessoas, os dois foram adicionados como ShortCode dentro do arquivo functions.php. Feito isso, era necessário testar pra ver se tudo está de acordo, então fui na página que as tabelas precisavam ser exibidas e coloquei os dois ShortCode, verificado, ele puxou com sucesso as informações das duas tabelas ( foram inseridas umas 3 linhas de dados em cada manualmente para o teste). Depois disso, foi necessário mudar o código que inseria informações no banco para apontar para esse banco.
+
+-----------------------------------
 
 
 Relatório sobre o Projeto de Cancela Automática com Reconhecimento de Placas de Carros
